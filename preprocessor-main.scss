@@ -21,6 +21,8 @@
     justify-content: center;
     margin-left: 80px;
     padding-top: 47px;
+    position: sticky;
+    margin-bottom: 92px;
 
     a {
     }
@@ -70,6 +72,90 @@
 
       margin-right: 367px;
       margin-left: 323px;
+    }
+  }
+
+  main {
+    .main_text {
+      max-width: 861px;
+      margin: 0 auto;
+      justify-content: center;
+
+      h1 {
+        text-align: center;
+        color: #FFFF;
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 130%;
+        margin-bottom: 20px;
+      }
+
+      .slogan_text {
+        max-width: 606px;
+        justify-content: center;
+        margin: auto;
+
+        p {
+          text-align: center;
+          color: #FFFF;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 160%;
+          letter-spacing: 0;
+          margin-bottom: 45px;
+        }
+      }
+    }
+
+    .search_form {
+      justify-content: center;
+      margin-left: 548px;
+      position: relative;
+      max-width: 344px;
+      height: 56px;
+      display: flex;
+
+      input {
+        width: 100%;
+        height: 100%;
+        border-radius: 42px;
+        border: 0.86px solid #FFFFFF;
+        padding: 8px 8px 8px 20px;
+        background-color: transparentize(#FFFFFF, 0.8);
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:active {
+          transform: translateY(-50%) scale(0.95);
+        }
+      }
+
+
     }
 
   }
