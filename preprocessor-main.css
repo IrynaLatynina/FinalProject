@@ -257,12 +257,19 @@ main {
         z-index: 2;
         cursor: pointer;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+      main .second_page .furniture_carousel:hover::before {
+        transform: translateY(-50%) scale(0.95);
+        transition: transform 0.2s ease; }
+      main .second_page .furniture_carousel:hover::after {
+        transform: translateY(-50%) scale(0.95);
+        transition: transform 0.2s ease; }
       main .second_page .furniture_carousel .furniture_card {
         max-width: 268px;
         align-items: center; }
         main .second_page .furniture_carousel .furniture_card > img {
           width: 219px;
-          height: 256px; }
+          height: 256px;
+          margin-bottom: 20px; }
         main .second_page .furniture_carousel .furniture_card .furniture_card_info {
           padding: 16px;
           background-color: #FFFFFF;
@@ -292,7 +299,8 @@ main {
               line-height: 100%; }
     main .second_page > a {
       text-decoration: none;
-      color: #E58411; }
+      color: #E58411;
+      margin-bottom: 50px; }
       main .second_page > a:after {
         content: '';
         display: inline-block;
