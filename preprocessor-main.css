@@ -392,7 +392,8 @@ main {
   main .fourth_page {
     display: flex;
     justify-content: center;
-    gap: 94px; }
+    gap: 94px;
+    margin-bottom: 240px; }
     main .fourth_page .fourth_page_text {
       display: flex;
       flex-direction: column;
