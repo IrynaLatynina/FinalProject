@@ -19,6 +19,9 @@
     gap: 10px;
     justify-content: space-between;
     padding-top: 47px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
     margin-bottom: 92px; }
     .general_background nav > a {
       display: inline-block;
@@ -390,5 +393,29 @@ main {
           height: 13px;
           background-image: url("images/right_arrow.svg");
           margin-left: 13px; }
+  main .fourth_page {
+    display: flex;
+    justify-content: center; }
+    main .fourth_page .fourth_page_text {
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      width: 100%;
+      align-items: flex-start;
+      margin-bottom: 306px; }
+      main .fourth_page .fourth_page_text h5 {
+        color: #E58411; }
+      main .fourth_page .fourth_page_text h2 {
+        color: #1E1E1E; }
+      main .fourth_page .fourth_page_text p {
+        color: #1E1E1E; }
+      main .fourth_page .fourth_page_text a {
+        color: #E58411; }
+    main .fourth_page .fourth_page_image {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 306px; }
 
 /*# sourceMappingURL=preprocessor-main.css.map */
