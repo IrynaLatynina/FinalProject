@@ -7,11 +7,11 @@
 
 .general_background {
   background-image: url("images/main_background_image.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  max-width: 1440px;
+  //max-width: 1440px;
   margin: 0 auto;
   padding: 40px 80px;
 
@@ -23,9 +23,9 @@
     gap: 10px;
     justify-content: space-between;
     padding-top: 47px;
-    position: sticky;
-    top: 0;
-    z-index: 5;
+    //position: sticky;
+    //top: 0;
+    //z-index: 5;
     margin-bottom: 92px;
 
     > a {
@@ -539,30 +539,59 @@ main {
   .fourth_page {
     display: flex;
     justify-content: center;
+    gap: 94px;
+
     .fourth_page_text {
       display: flex;
       flex-direction: column;
       background-color: #FFFFFF;
       width: 100%;
       align-items: flex-start;
-      margin-bottom: 306px;
+      margin-bottom: 240px;
+
 
       h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 20px;
         color: #E58411;
       }
 
       h2 {
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 20px;
         color: #1E1E1E;
       }
 
       p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 185%;
+        margin-bottom: 24px;
         color: #1E1E1E;
       }
 
       a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 185%;
+        text-decoration: none;
         color: #E58411;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 39px;
+          height: 13px;
+          background-image: url('images/right_arrow.svg');
+          margin-left: 13px;
+        }
       }
     }
+
     .fourth_page_image {
       display: flex;
       justify-content: center;
@@ -572,7 +601,51 @@ main {
     }
   }
 
+  .fifth_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 214px;
+    padding: 0 127px;
+
+    .fifth_page_text {
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      width: 100%;
+      align-items: center;
+
+
+      h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 20px;
+        color: #E58411;
+      }
+
+      h2 {
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 60px;
+        color: #1E1E1E;
+      }
+    }
+
+    .review_containers {
+      display: flex;
+      background-color: #FFFFFF;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 240px;
+      gap: 20px;
+    }
+  }
 }
+
+
 
 
 
