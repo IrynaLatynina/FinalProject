@@ -299,53 +299,53 @@ main {
       margin: 0 auto;
       position: relative;
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: -30px;
-        transform: translateY(-50%); // Perfect vertical centering
-        width: 40px; // Increased width for the circle
-        height: 40px; // Make it equal to width for perfect circle
-        background-image: url('images/black_arrow_left.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 21px 15px;
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        z-index: 2;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: -30px;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        background-image: url('images/black_arrow_right.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 21px 15px;
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        z-index: 2;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      &:hover::before {
-        transform: translateY(-50%) scale(0.95);
-        transition: transform 0.2s ease;
-      }
-
-      &:hover::after {
-        transform: translateY(-50%) scale(0.95);
-        transition: transform 0.2s ease;
-      }
+      //&::before {
+      //  content: '';
+      //  position: absolute;
+      //  top: 50%;
+      //  left: -30px;
+      //  transform: translateY(-50%); // Perfect vertical centering
+      //  width: 40px; // Increased width for the circle
+      //  height: 40px; // Make it equal to width for perfect circle
+      //  background-image: url('images/black_arrow_left.svg');
+      //  background-repeat: no-repeat;
+      //  background-position: center;
+      //  background-size: 21px 15px;
+      //  background-color: #FFFFFF;
+      //  border-radius: 50%;
+      //  z-index: 2;
+      //  cursor: pointer;
+      //  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      //}
+      //
+      //&::after {
+      //  content: '';
+      //  position: absolute;
+      //  top: 50%;
+      //  right: -30px;
+      //  transform: translateY(-50%);
+      //  width: 40px;
+      //  height: 40px;
+      //  background-image: url('images/black_arrow_right.svg');
+      //  background-repeat: no-repeat;
+      //  background-position: center;
+      //  background-size: 21px 15px;
+      //  background-color: #FFFFFF;
+      //  border-radius: 50%;
+      //  z-index: 2;
+      //  cursor: pointer;
+      //  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      //}
+      //
+      //&:hover::before {
+      //  transform: translateY(-50%) scale(0.95);
+      //  transition: transform 0.2s ease;
+      //}
+      //
+      //&:hover::after {
+      //  transform: translateY(-50%) scale(0.95);
+      //  transition: transform 0.2s ease;
+      //}
 
       .furniture_card {
         max-width: 268px;
