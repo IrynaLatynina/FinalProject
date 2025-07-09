@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EAAC,SAAS,EAAE,KAAK",
+"sources": ["mobile-styles.scss"],
+"names": [],
+"file": "mobile-styles.css"
+}

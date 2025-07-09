@@ -5,41 +5,17 @@
 }
 
 
-.general_background {
-  background-image: url("images/main_background_image.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  //max-width: 1440px;
-  margin: 0 auto;
-  padding: 40px 80px;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 1060px;
-    left: 0;
-    right: 0;
-    height: 100px; // Adjust the height of the gradient
-    width: 100%;
-    background: linear-gradient(to bottom,
-            rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.9) 70%,
-            rgba(255, 255, 255, 1) 100%
-    );
-    z-index: 2;
-  }
-
-
+header {
   nav {
     align-items: center;
     width: 100%;
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    padding-top: 47px;
-    //position: sticky;
-    //top: 0;
-    //z-index: 5;
+    padding: 47px 80px;
+    position: absolute;
+    top: 0;
+    z-index: 5;
     margin-bottom: 92px;
 
     > a {
@@ -101,94 +77,119 @@
       }
     }
   }
+}
 
+main {
+  margin: 0 auto;
 
-  .header_text_page {
-    .main_text {
-      max-width: 861px;
-      margin: 0 auto;
-      justify-content: center;
+  .general_background {
+    background-image: url("images/main_background_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 40px 80px;
+    position: relative;
 
-      h1 {
-        text-align: center;
-        color: #FFFF;
-        font-size: 80px;
-        font-weight: 400;
-        line-height: 130%;
-        margin-bottom: 20px;
-      }
-
-      .slogan_text {
-        max-width: 606px;
-        justify-content: center;
-        margin: auto;
-
-        p {
-          text-align: center;
-          color: #FFFF;
-          font-size: 24px;
-          font-weight: 400;
-          line-height: 160%;
-          letter-spacing: 0;
-          margin-bottom: 45px;
-        }
-      }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1060px;
+      left: 0;
+      right: 0;
+      height: 100px;
+      width: 100%;
+      background: linear-gradient(to bottom,
+              rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0.9) 70%,
+              rgba(255, 255, 255, 1) 100%
+      );
+      z-index: 2;
     }
 
-    .search_form {
-      justify-content: center;
-      position: relative;
-      max-width: 344px;
-      height: 56px;
-      display: flex;
-      margin: 0 auto;
+    .top_text_page {
+      .main_text {
+        max-width: 861px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 167px;
 
-      input {
-        width: 100%;
-        height: 100%;
-        border-radius: 42px;
-        border: 0.86px solid #FFFFFF;
-        padding: 8px 8px 8px 20px;
-        background-color: transparentize(#FFFFFF, 0.8);
-        color: #FFFFFF;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 150%;
+        h1 {
+          text-align: center;
+          color: #FFFF;
+          font-size: 80px;
+          font-weight: 400;
+          line-height: 130%;
+          margin-bottom: 20px;
+        }
+
+        .slogan_text {
+          max-width: 606px;
+          justify-content: center;
+          margin: auto;
+
+          p {
+            text-align: center;
+            color: #FFFF;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 160%;
+            letter-spacing: 0;
+            margin-bottom: 45px;
+          }
+        }
       }
 
-      button {
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        right: 5px;
-        top: 50%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        padding: 8px;
-        display: flex;
-        align-items: center;
+      .search_form {
         justify-content: center;
+        position: relative;
+        max-width: 344px;
+        height: 56px;
+        display: flex;
+        margin: 0 auto;
 
-        img {
-          width: 40px;
-          height: 40px;
+        input {
+          width: 100%;
+          height: 100%;
+          border-radius: 42px;
+          border: 0.86px solid #FFFFFF;
+          padding: 8px 8px 8px 20px;
+          background-color: transparentize(#FFFFFF, 0.8);
+          color: #FFFFFF;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
         }
 
-        &:hover {
-          opacity: 0.8;
-        }
+        button {
+          background-color: transparent;
+          border: none;
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          padding: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
-        &:active {
-          transform: translateY(-50%) scale(0.95);
+          img {
+            width: 40px;
+            height: 40px;
+          }
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          &:active {
+            transform: translateY(-50%) scale(0.95);
+          }
         }
       }
     }
   }
-}
-
-main {
-  max-width: 1440px;
-  margin: 0 auto;
 
   .first_page {
     gap: 130px;
@@ -250,12 +251,11 @@ main {
   .second_page {
     background-color: #F7F7F7;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 306px;
-
 
     h2 {
       font-size: 42px;
@@ -308,10 +308,9 @@ main {
 
     .furniture_carousel {
       display: flex;
-      gap: 30px;
-      justify-content: center;
+      gap: 42px;
+      justify-content: space-around;
       flex-wrap: wrap;
-      max-width: 1200px;
       margin: 0 auto;
       position: relative;
 
@@ -438,57 +437,59 @@ main {
     display: flex;
     align-items: flex-start;
     margin-bottom: 306px;
+    gap:30px;
 
     .image_container {
-      width: 50%;
-      height: 390px;
+      width: 100%;
+      height: 500px;
+      z-index: 1;
       position: relative;
 
+      img {
+        position: absolute;
+        z-index: 5;
+        box-shadow: -2px 48px 28px -11px rgba(237, 216, 186, 0.5);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0 16px 16px 0;
+        top: 0;
+        left: 0;
+      }
+
       .background_image1 {
-        width: 492px;
-        height: 322px;
+        width: 70%;
+        height: 70%;
         background-color: #F7F7F7;
         background-size: cover;
         background-position: center;
         position: absolute;
         top: -65px;
-        left: -135px;
-        z-index: 1;
+        left: -35px;
+        z-index: 2;
         border-radius: 16px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       .background_image2 {
-        width: 495px;
-        height: 301px;
+        width: 80%;
+        height: 80%;
         background-color: #F7F7F7;
         background-size: cover;
         background-position: center;
         position: absolute;
         top: 55px;
-        left: 135px;
-        z-index: 1;
+        left: 195px;
+        z-index: 2;
         border-radius: 16px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-      }
-
-      img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        box-shadow: -2px 48px 28px -11px rgba(237, 216, 186, 0.5);
-        width: 100%;
-        height: 100%;
-
       }
     }
 
     .text_container {
       justify-content: center;
       padding: 0 141px;
-      width: 70%;
+      width: 100%;
       background-color: #FFFFFF;
       margin-bottom: 40px;
       gap: 10px;
@@ -548,7 +549,7 @@ main {
       width: 100%;
       align-items: flex-start;
       margin-bottom: 240px;
-
+      padding-left: 80px;
 
       h5 {
         font-size: 18px;
@@ -636,6 +637,7 @@ main {
 
     .review_containers {
       display: flex;
+      justify-content: center;
       background-color: #FFFFFF;
       width: 100%;
       align-items: center;
@@ -707,6 +709,7 @@ footer {
 
     .social_media {
       position: relative;
+
       li:not(:first-of-type) {
         a {
           position: relative;
