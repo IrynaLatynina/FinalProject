@@ -437,7 +437,7 @@ main {
     display: flex;
     align-items: flex-start;
     margin-bottom: 306px;
-    gap:30px;
+    gap: 30px;
 
     .image_container {
       width: 100%;
@@ -648,102 +648,128 @@ main {
 }
 
 footer {
-  background-color: #F7F7F7;
-  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 118px 188px;
+  justify-content: center;
+  padding: 0 127px;
+  background-color: #F7F7F7;
+  gap: 10px;
 
-  .footer_text {
-    width: 100%;
-    color: #1E1E1E;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 185%;
+  .footer_container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-right: 152px;
-    padding: 118px 128px;
+    padding: 118px;
 
-    a {
-      color: #1E1E1E;
-      text-decoration: none;
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 185%;
-    }
-
-    p {
-      margin-bottom: 10px;
+    .footer_text {
+      width: 100%;
       color: #1E1E1E;
       font-size: 14px;
       font-weight: 400;
       line-height: 185%;
-    }
-  }
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-right: 152px;
 
-  .footer_links {
-    display: flex;
-    gap: 110px;
+      a {
+        color: #1E1E1E;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 185%;
+      }
 
-    ul {
-      li {
-        list-style: none;
-        font-size: 17px;
-        padding: 10px;
-
-        a {
-          color: #1E1E1E;
-          text-decoration: none;
-          font-size: 15px;
-          font-weight: 400;
-          line-height: 160%;
-        }
-
-        &:first-of-type {
-          color: #F6973F;
-        }
+      p {
+        margin-bottom: 10px;
+        color: #1E1E1E;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 185%;
       }
     }
 
-    .social_media {
-      position: relative;
+    .footer_links {
+      display: flex;
+      gap: 110px;
 
-      li:not(:first-of-type) {
-        a {
-          position: relative;
-          padding-left: 25px;
-          display: inline-block;
+      ul {
+        li {
+          list-style: none;
+          font-size: 17px;
+          padding: 10px;
 
-          &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
-            background-repeat: no-repeat;
-            background-size: contain;
+          a {
+            color: #1E1E1E;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 160%;
+          }
+
+          &:first-of-type {
+            color: #F6973F;
+          }
+        }
+      }
+
+      .social_media {
+        position: relative;
+
+        li:not(:first-of-type) {
+          a {
+            position: relative;
+            padding-left: 25px;
+            display: inline-block;
+
+            &::before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 20px;
+              height: 20px;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
           }
         }
 
         li:nth-of-type(2) a::before { // Facebook (second li)
           background-image: url('images/facebook.svg');
         }
+      }
 
-        li:nth-of-type(3) a::before { // Twitter (third li)
-          background-image: url('images/twitter.svg');
-        }
+      li:nth-of-type(3) a::before { // Twitter (third li)
+        background-image: url('images/twitter.svg');
+      }
 
-        li:nth-of-type(4) a::before { // Instagram (fourth li)
-          background-image: url('images/instagram.svg');
-        }
+      li:nth-of-type(4) a::before { // Instagram (fourth li)
+        background-image: url('images/instagram.svg');
       }
     }
   }
+
+
+  .copyright {
+    gap: 40px;
+
+    image {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1E1E1E;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 185%;
+
+    }
+  }
 }
+
 
 
 
