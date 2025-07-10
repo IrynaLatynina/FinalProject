@@ -168,6 +168,8 @@ main {
           background-repeat: no-repeat;
           background-size: contain;
           margin-left: 10px; }
+        main .first_page .more_info a:hover {
+          color: #b6690d; }
   main .second_page {
     background-color: #F7F7F7;
     width: 100%;
@@ -266,6 +268,8 @@ main {
         background-repeat: no-repeat;
         background-size: contain;
         margin-left: 10px; }
+      main .second_page > a:hover {
+        color: #b6690d; }
   main .third_page {
     background-color: #FFFFFF;
     width: 100%;
@@ -349,6 +353,8 @@ main {
           height: 13px;
           background-image: url("images/right_arrow.svg");
           margin-left: 13px; }
+        main .third_page .text_container a:hover {
+          color: #b6690d; }
   main .fourth_page {
     display: flex;
     justify-content: center;
@@ -393,6 +399,8 @@ main {
           height: 13px;
           background-image: url("images/right_arrow.svg");
           margin-left: 13px; }
+        main .fourth_page .fourth_page_text a:hover {
+          color: #b6690d; }
     main .fourth_page .fourth_page_image {
       display: flex;
       justify-content: center;
@@ -467,6 +475,11 @@ footer .footer_container1 {
       list-style: none;
       font-size: 17px;
       padding: 10px; }
+      footer .footer_container1 .footer_links ul li:hover {
+        background-color: #E58411;
+        border-radius: 16px; }
+        footer .footer_container1 .footer_links ul li:hover a {
+          color: #FFFFFF; }
       footer .footer_container1 .footer_links ul li a {
         color: #1E1E1E;
         text-decoration: none;
@@ -475,6 +488,9 @@ footer .footer_container1 {
         line-height: 160%; }
       footer .footer_container1 .footer_links ul li:first-of-type {
         color: #F6973F; }
+        footer .footer_container1 .footer_links ul li:first-of-type:hover {
+          background-color: transparent;
+          border-radius: 16px; }
     footer .footer_container1 .footer_links .social_media {
       position: relative; }
       footer .footer_container1 .footer_links .social_media li:not(:first-of-type) a {
