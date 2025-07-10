@@ -144,6 +144,9 @@ main {
       justify-content: space-between;
       gap: 28px;
       margin-bottom: 100px; }
+      @media screen and (max-width: 1120px) {
+        main .first_page .more_info {
+          gap: 80px; } }
       main .first_page .more_info h3 {
         font-size: 24px;
         font-weight: 400;
@@ -462,6 +465,11 @@ footer .footer_container1 {
       font-size: 28px;
       font-weight: 400;
       line-height: 185%; }
+      footer .footer_container1 .footer_text a:hover {
+        -webkit-transform: rotate(350deg);
+        -ms-transform: rotate(350deg);
+        transform: rotate(350deg);
+        display: block; }
     footer .footer_container1 .footer_text p {
       margin-bottom: 60px;
       color: #1E1E1E;
@@ -538,5 +546,7 @@ footer .footer_container2 {
       font-weight: 400;
       line-height: 185%;
       justify-content: flex-end; }
+      footer .footer_container2 .terms_and_conditions a:hover {
+        color: #E58411; }
 
 /*# sourceMappingURL=preprocessor-main.css.map */

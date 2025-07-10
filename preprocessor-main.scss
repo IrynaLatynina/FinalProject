@@ -1,3 +1,17 @@
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+  display: block;
+}
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+$background-color: #F7F7F7;
+$font-orange-color: #E58411;
+$text-color: #1E1E1E;
 * {
   padding: 0;
   margin: 0;
@@ -182,7 +196,7 @@ main {
     padding: 80px;
     margin: 0 auto;
     background-color: #FFFFFF;
-    color: #1E1E1E;
+    color: $text-color;
     display: flex;
     justify-content: center;
     position: relative;
@@ -199,6 +213,9 @@ main {
       justify-content: space-between;
       gap: 28px;
       margin-bottom: 100px;
+      @include max-screen(1120px){
+        gap:80px;
+      }
 
       h3 {
         font-size: 24px;
@@ -215,7 +232,7 @@ main {
 
       a {
         text-decoration: none;
-        color: #E58411;
+        color: $font-orange-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 185%;
@@ -232,14 +249,14 @@ main {
         }
 
         &:hover {
-          color: darken(#E58411, 10%);
+          color: darken($font-orange-color, 10%);
         }
       }
     }
   }
 
   .second_page {
-    background-color: #F7F7F7;
+    background-color: $background-color;
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -279,7 +296,7 @@ main {
 
           a {
             text-decoration: none;
-            color: #1E1E1E;
+            color: $text-color;
             font-size: 18px;
             font-weight: 400;
             line-height: 100%;
@@ -373,7 +390,7 @@ main {
             font-weight: 400;
             line-height: 100%;
             margin-bottom: 6px;
-            color: #1E1E1E;
+            color: $text-color;
           }
 
           h3 {
@@ -404,7 +421,7 @@ main {
 
     > a {
       text-decoration: none;
-      color: #E58411;
+      color: $font-orange-color;
       margin-bottom: 50px;
 
       &:after {
@@ -419,7 +436,7 @@ main {
       }
 
       &:hover {
-        color: darken(#E58411, 10%);
+        color: darken($font-orange-color, 10%);
       }
     }
   }
@@ -454,7 +471,7 @@ main {
       .background_image1 {
         width: 70%;
         height: 70%;
-        background-color: #F7F7F7;
+        background-color: $background-color;
         background-size: cover;
         background-position: center;
         position: absolute;
@@ -468,7 +485,7 @@ main {
       .background_image2 {
         width: 80%;
         height: 80%;
-        background-color: #F7F7F7;
+        background-color: $background-color;
         background-size: cover;
         background-position: center;
         position: absolute;
@@ -491,7 +508,7 @@ main {
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 20px;
-        color: #E58411;
+        color: $font-orange-color;
         text-transform: uppercase;
       }
 
@@ -499,7 +516,7 @@ main {
         font-size: 42px;
         font-weight: 400;
         line-height: 100%;
-        color: #1E1E1E;
+        color: $text-color;
         margin-bottom: 20px;
       }
 
@@ -512,7 +529,7 @@ main {
 
       a {
         text-decoration: none;
-        color: #E58411;
+        color: $font-orange-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 185%;
@@ -527,7 +544,7 @@ main {
         }
 
         &:hover {
-          color: darken(#E58411, 10%);
+          color: darken($font-orange-color, 10%);
         }
       }
     }
@@ -552,7 +569,7 @@ main {
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 20px;
-        color: #E58411;
+        color: $font-orange-color;
         text-transform: uppercase;
       }
 
@@ -561,7 +578,7 @@ main {
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 20px;
-        color: #1E1E1E;
+        color: $text-color;
       }
 
       p {
@@ -569,7 +586,7 @@ main {
         font-weight: 400;
         line-height: 185%;
         margin-bottom: 24px;
-        color: #1E1E1E;
+        color: $text-color;
       }
 
       a {
@@ -577,7 +594,7 @@ main {
         font-weight: 400;
         line-height: 185%;
         text-decoration: none;
-        color: #E58411;
+        color: $font-orange-color;
 
         &:after {
           content: '';
@@ -589,7 +606,7 @@ main {
         }
 
         &:hover {
-          color: darken(#E58411, 10%);
+          color: darken($font-orange-color, 10%);
         }
       }
     }
@@ -624,7 +641,7 @@ main {
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 20px;
-        color: #E58411;
+        color: $font-orange-color;
         text-transform: uppercase;
       }
 
@@ -633,7 +650,7 @@ main {
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 60px;
-        color: #1E1E1E;
+        color: $text-color;
       }
     }
 
@@ -652,11 +669,11 @@ footer {
   .footer_container1 {
     display: flex;
     padding: 118px;
-    background-color: #F7F7F7;
+    background-color: $background-color;
 
     .footer_text {
       width: 100%;
-      color: #1E1E1E;
+      color: $text-color;
       font-size: 14px;
       font-weight: 400;
       line-height: 185%;
@@ -666,16 +683,19 @@ footer {
       margin-right: 152px;
 
       a {
-        color: #1E1E1E;
+        color: $text-color;
         text-decoration: none;
         font-size: 28px;
         font-weight: 400;
         line-height: 185%;
+        &:hover {
+          @include transform(rotate(350deg));
+        }
       }
 
       p {
         margin-bottom: 60px;
-        color: #1E1E1E;
+        color: $text-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 185%;
@@ -693,7 +713,7 @@ footer {
           padding: 10px;
 
           &:hover {
-            background-color: #E58411;
+            background-color: $font-orange-color;
             border-radius: 16px;
 
             a {
@@ -702,7 +722,7 @@ footer {
           }
 
           a {
-            color: #1E1E1E;
+            color: $text-color;
             text-decoration: none;
             font-size: 15px;
             font-weight: 400;
@@ -763,7 +783,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 118px;
-    background-color: #F7F7F7;
+    background-color: $background-color;
 
     .copyright {
       display: flex;
@@ -785,11 +805,14 @@ footer {
 
       a {
         text-decoration: none;
-        color: #1E1E1E;
+        color: $text-color;
         font-size: 14px;
         font-weight: 400;
         line-height: 185%;
         justify-content: flex-end;
+        &:hover {
+          color: $font-orange-color;
+        }
       }
     }
   }

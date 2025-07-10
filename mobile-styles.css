@@ -6,10 +6,8 @@
 
   main .first_page {
     padding: 80px 120px; }
-    main .first_page .more_info {
-      gap: 90px; }
-      main .first_page .more_info p {
-        padding: 30px 0; }
+    main .first_page .more_info p {
+      padding: 30px 0; }
 
   main .fourth_page .fourth_page_text {
     padding: 0 80px 40px; }
