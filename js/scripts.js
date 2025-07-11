@@ -1,15 +1,15 @@
 $('.owl-carousel').owlCarousel({
     autoplay:true,
-    autoplayTimeout: 1500,
+    autoplayTimeout: 2500,
     autoplaySpeed: 1000,
     loop: true,
     nav:true,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         1100:{
-            items:1
+            items:3
         }
     }
 
