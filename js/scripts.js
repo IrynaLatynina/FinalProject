@@ -6,14 +6,22 @@ $('.owl-carousel').owlCarousel({
     nav:true,
     responsive:{
         0:{
+            items:1
+        },
+        905:{
             items:2
         },
-        1100:{
+        1055:{
             items:3
+        },
+
+        1400:{
+            items:4
         }
     }
 
 })
+
 
 $( function() {
     $( "#accordion" ).accordion();

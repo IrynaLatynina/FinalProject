@@ -249,7 +249,7 @@ main {
       flex-wrap: wrap;
       margin: 0 auto;
       position: relative;
-      padding-left: 240px; }
+      padding: 0 80px; }
       main .second_page .furniture_carousel .furniture_card {
         max-width: 268px;
         align-items: center;
@@ -278,7 +278,8 @@ main {
             display: flex;
             justify-content: start;
             align-items: center;
-            margin-top: 16px; }
+            margin-top: 16px;
+            flex-wrap: wrap; }
             main .second_page .furniture_carousel .furniture_card .furniture_card_info .price::before {
               content: '';
               display: inline-block;
@@ -454,8 +455,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 214px;
-    padding: 0 127px; }
+    margin-bottom: 214px; }
     main .fifth_page .fifth_page_text {
       display: flex;
       flex-direction: column;
@@ -590,7 +590,7 @@ footer .footer_container2 {
 .owl-nav .owl-prev {
   position: absolute;
   top: 35%;
-  left: 220px;
+  left: 60px;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
@@ -605,10 +605,14 @@ footer .footer_container2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
   .owl-nav .owl-prev span {
     display: none; }
+  @media screen and (max-width: 320px) {
+    .owl-nav .owl-prev {
+      left: 20px;
+      top: 35%; } }
 .owl-nav .owl-next {
   position: absolute;
   top: 35%;
-  right: 70px;
+  right: 170px;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
@@ -623,5 +627,21 @@ footer .footer_container2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
   .owl-nav .owl-next span {
     display: none; }
+  @media screen and (max-width: 1200px) {
+    .owl-nav .owl-next {
+      right: 130px;
+      top: 35%; } }
+  @media screen and (max-width: 1110px) {
+    .owl-nav .owl-next {
+      right: 110px;
+      top: 35%; } }
+  @media screen and (max-width: 500px) {
+    .owl-nav .owl-next {
+      right: 80px;
+      top: 35%; } }
+  @media screen and (max-width: 320px) {
+    .owl-nav .owl-next {
+      right: 10px;
+      top: 35%; } }
 
 /*# sourceMappingURL=preprocessor-main.css.map */

@@ -1,14 +1,14 @@
-@media screen and (max-width: 3000px) {
-  main .third_page .image_container img {
-    width: 90%; }
-  main .third_page .text_container p {
-    margin-bottom: 64px; }
-
+@media screen and (min-width: 3000px) {
   main .first_page {
     padding: 80px 120px; }
     main .first_page .more_info p {
       padding: 30px 0; }
-
+  main .second_page .furniture_carousel {
+    padding: 0 360px; }
+  main .third_page .image_container img {
+    width: 90%; }
+  main .third_page .text_container p {
+    margin-bottom: 64px; }
   main .fourth_page .fourth_page_text {
     padding: 0 80px 40px; }
     main .fourth_page .fourth_page_text p {
@@ -25,31 +25,39 @@
   main .fifth_page .review_containers {
     flex-wrap: wrap; } }
 @media screen and (max-width: 1050px) {
-  main .fourth_page {
-    flex-wrap: wrap; }
-    main .fourth_page .fourth_page_text {
-      margin-bottom: 10px; }
-
+  main .second_page .furniture_carousel {
+    padding: 0 160px; }
   main .third_page {
     flex-wrap: wrap;
     margin-bottom: 106px; }
     main .third_page .text_container {
       padding: 0 180px 40px; }
     main .third_page .image_container .background_image2 {
-      display: none; } }
+      display: none; }
+  main .fourth_page {
+    flex-wrap: wrap; }
+    main .fourth_page .fourth_page_text {
+      margin-bottom: 10px; } }
 @media screen and (max-width: 892px) {
   main .first_page {
     flex-wrap: wrap;
     gap: 30px; }
+  main .second_page .furniture_carousel {
+    padding: 0 280px; }
 
   footer .footer_container1 {
     flex-wrap: wrap; }
     footer .footer_container1 .footer_links {
       flex-wrap: wrap; } }
+@media screen and (max-width: 813px) {
+  main .second_page .furniture_carousel {
+    padding-left: 245px; } }
 @media screen and (max-width: 768px) {
   header nav ul {
     flex-wrap: wrap; }
 
+  main .second_page .furniture_carousel {
+    padding: 0 190px; }
   main .first_page h2 {
     padding: 5px; }
 
@@ -63,14 +71,14 @@
     padding-top: 267px; }
     main .general_background .top_text_page .main_text h1 {
       font-size: 50px; }
-
+  main .second_page .furniture_carousel {
+    padding: 0 150px; }
   main .third_page {
     margin-bottom: 86px; }
     main .third_page .text_container {
       padding: 20px; }
       main .third_page .text_container h2 {
         font-size: 30px; }
-
   main .fourth_page .fourth_page_text {
     padding: 20px; }
     main .fourth_page .fourth_page_text h2 {
@@ -80,6 +88,14 @@
     padding: 20px; }
   footer .footer_container2 {
     padding: 20px; } }
+@media screen and (max-width: 480px) {
+  main .first_page .more_info {
+    gap: 25px;
+    flex-wrap: wrap; }
+  main .second_page .furniture_carousel .furniture_card .furniture_card_info .price {
+    flex-wrap: wrap; }
+    main .second_page .furniture_carousel .furniture_card .furniture_card_info .price::after {
+      margin-left: 120px; } }
 @media screen and (max-width: 370px) {
   main .general_background .top_text_page .main_text {
     padding-top: 367px; } }
@@ -94,8 +110,8 @@
     padding: 20px; }
     main .first_page .more_info {
       flex-wrap: wrap; }
-  main .second_page {
-    margin-bottom: 86px; }
+  main .second_page .furniture_carousel {
+    padding: 15px; }
   main .fourth_page {
     margin-bottom: 86px; }
     main .fourth_page .fourth_page_text {
