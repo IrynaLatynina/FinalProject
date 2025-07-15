@@ -26,8 +26,6 @@
   main .third_page {
     flex-wrap: wrap;
     margin-bottom: 106px; }
-    main .third_page .text_container {
-      padding: 0 180px 40px; }
     main .third_page .image_container .background_image2 {
       display: none; }
   main .fourth_page {

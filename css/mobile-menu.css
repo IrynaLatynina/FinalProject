@@ -132,9 +132,11 @@
 
   header nav {
     justify-content: flex-end;
-    padding: 80px 20px; }
+    padding: 80px 78px; }
     header nav ul {
       gap: 0; }
+      header nav ul li span {
+        color: #1c3991; }
       header nav ul li:first-of-type::after {
         left: 75px;
         background-image: url("../images/Vector_blue.svg"); } }

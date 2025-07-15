@@ -1,3 +1,51 @@
+@font-face {
+  font-family: 'gilroyblack';
+  src: url('../fonts/gilroy-black-webfont.eot');
+  src: url('../fonts/gilroy-black-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gilroy-black-webfont.woff2') format('woff2'),
+  url('../fonts/gilroy-black-webfont.woff') format('woff'),
+  url('../fonts/gilroy-black-webfont.ttf') format('truetype'),
+  url('../fonts/gilroy-black-webfont.svg#gilroyblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroybold';
+  src: url('../fonts/gilroy-bold-webfont.eot');
+  src: url('../fonts/gilroy-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gilroy-bold-webfont.woff2') format('woff2'),
+  url('../fonts/gilroy-bold-webfont.woff') format('woff'),
+  url('../fonts/gilroy-bold-webfont.ttf') format('truetype'),
+  url('../fonts/gilroy-bold-webfont.svg#gilroybold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroyblack_italic';
+  src: url('../fonts/gilroy-blackitalic-webfont.eot');
+  src: url('../fonts/gilroy-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gilroy-blackitalic-webfont.woff2') format('woff2'),
+  url('../fonts/gilroy-blackitalic-webfont.woff') format('woff'),
+  url('../fonts/gilroy-blackitalic-webfont.ttf') format('truetype'),
+  url('../fonts/gilroy-blackitalic-webfont.svg#gilroyblack_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroybold_italic';
+  src: url('../fonts/gilroy-bolditalic-webfont.eot');
+  src: url('../fonts/gilroy-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/gilroy-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/gilroy-bolditalic-webfont.woff') format('woff'),
+  url('../fonts/gilroy-bolditalic-webfont.ttf') format('truetype'),
+  url('../fonts/gilroy-bolditalic-webfont.svg#gilroybold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @mixin transform($property) {
   -webkit-transform: $property;
   -ms-transform: $property;
@@ -61,6 +109,7 @@ $text-color: #1E1E1E;
 }
 
 header {
+
   a {
     display: inline-block;
     transition: transform 0.3s ease;
@@ -68,9 +117,10 @@ header {
 
     &:first-of-type {
       position: absolute;
-      top:40px;
-      left: 25px;
+      top: 40px;
+      left: 80px;
       z-index: 8;
+
       &:hover {
         transform: rotate(360deg);
       }
@@ -78,14 +128,16 @@ header {
 
     &:nth-of-type(2) {
       position: absolute;
-      top:40px;
-      right: 25px;
+      top: 40px;
+      right: 80px;
       z-index: 8;
+
       &:hover {
         transform: rotate(180deg);
       }
     }
   }
+
   nav {
     align-items: center;
     width: 100%;
@@ -107,7 +159,7 @@ header {
       color: #FFFF;
 
       li {
-        a {
+        span {font-family: 'Gilroy-BoldItalic', sans-serif;
           color: #FFFF;
           font-size: 18px;
           font-weight: 400;
@@ -165,6 +217,7 @@ main {
         padding-top: 167px;
 
         h1 {
+          font-family:'gilroybold', sans-serif ;
           text-align: center;
           color: #FFFF;
           font-size: 80px;
@@ -179,6 +232,7 @@ main {
           margin: auto;
 
           p {
+            font-family:'gilroy_italic', sans-serif ;
             text-align: center;
             color: #FFFF;
             font-size: 24px;
@@ -252,6 +306,7 @@ main {
     position: relative;
 
     h2 {
+      font-family: 'gilroybold', sans-serif;
       font-size: 42px;
       font-weight: 400;
       line-height: 100%;
@@ -267,20 +322,22 @@ main {
         gap: 80px;
       }
 
-      h3 {
+      h3 {font-family: 'gilroybold', sans-serif;
         font-size: 24px;
         font-weight: 400;
         line-height: 100%;
         margin-bottom: 20px;
       }
 
-      p {
-        font-size: 16px;
+      p {font-family: 'Gilroy-Regular', sans-serif;
         font-weight: 400;
+        font-size: 16px;
+        line-height: 185%;
+        color: #1e1e1e;
         margin-bottom: 14px;
       }
 
-      a {
+      a {font-family: 'Gilroy-Regular', sans-serif;
         text-decoration: none;
         color: $font-orange-color;
         font-size: 14px;
@@ -315,9 +372,10 @@ main {
     margin-bottom: 306px;
 
     h2 {
-      font-size: 42px;
+      font-family: 'gilroybold', sans-serif;
       font-weight: 400;
-      line-height: 100%;
+      font-size: 42px;
+      color: #1e1e1e;
       text-align: center;
       margin-bottom: 32px;
       padding-top: 50px;
@@ -344,12 +402,12 @@ main {
           border-radius: 16px;
           padding: 8px;
 
-          a {
+          a {font-family: 'Gilroy-Regular', sans-serif;
             text-decoration: none;
             color: $text-color;
-            font-size: 18px;
             font-weight: 400;
-            line-height: 100%;
+            font-size: 18px;
+            line-height: 185%;
           }
 
           &:hover {
@@ -388,15 +446,14 @@ main {
           border-radius: 0 0 16px;
           margin-bottom: 60px;
 
-          h5 {
-            font-size: 16.76px;
+          h5 {font-family: 'Gilroy-Regular', sans-serif;
             font-weight: 400;
-            line-height: 100%;
+            font-size: 16px;
+            color: #8d8d8d;
             margin-bottom: 6px;
-            color: $text-color;
           }
 
-          h3 {
+          h3 {font-family: 'gilroybold', sans-serif;
             font-size: 21.33px;
             font-weight: 600;
             line-height: 100%;
@@ -428,17 +485,16 @@ main {
             }
 
             p {
-              color: #0D1B39;
-              font-size: 21.33px;
               font-weight: 600;
-              line-height: 100%;
+              font-size: 21px;
+              color: #0d1b39;
             }
           }
         }
       }
     }
 
-    > a {
+    > a {font-family: 'Gilroy-Regular', sans-serif;
       text-decoration: none;
       color: $font-orange-color;
       margin-bottom: 50px;
@@ -523,30 +579,31 @@ main {
       margin-bottom: 40px;
 
       h5 {
-        font-size: 18px;
+        font-family: 'Gilroy-Regular', sans-serif;
         font-weight: 400;
-        line-height: 100%;
+        font-size: 18px;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
         margin-bottom: 20px;
         color: $font-orange-color;
-        text-transform: uppercase;
       }
 
-      h2 {
-        font-size: 42px;
+      h2 {font-family: 'gilroybold', sans-serif;
         font-weight: 400;
-        line-height: 100%;
+        font-size: 42px;
+        text-transform: capitalize;
         color: $text-color;
         margin-bottom: 20px;
       }
 
-      p {
-        font-size: 18px;
+      p {font-family: 'Gilroy-Regular', sans-serif;
         font-weight: 400;
+        font-size: 18px;
         line-height: 185%;
         margin-bottom: 24px;
       }
 
-      a {
+      a {font-family: 'Gilroy-Regular', sans-serif;
         text-decoration: none;
         color: $font-orange-color;
         font-size: 14px;
@@ -583,24 +640,24 @@ main {
       margin-bottom: 240px;
       padding: 0 80px;
 
-      h5 {
-        font-size: 18px;
+      h5 {font-family: 'Gilroy-Regular', sans-serif;
         font-weight: 400;
-        line-height: 100%;
+        font-size: 18px;
+        letter-spacing: 0.17em;
         margin-bottom: 20px;
         color: $font-orange-color;
         text-transform: uppercase;
       }
 
-      h2 {
-        font-size: 42px;
+      h2 {font-family: 'gilroybold', sans-serif;
         font-weight: 400;
-        line-height: 100%;
+        font-size: 42px;
+        text-transform: capitalize;
         margin-bottom: 20px;
         color: $text-color;
       }
 
-      p {
+      p {font-family: 'Gilroy-Regular', sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 185%;
@@ -608,7 +665,7 @@ main {
         color: $text-color;
       }
 
-      a {
+      a {font-family: 'Gilroy-Regular', sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 185%;
@@ -635,7 +692,7 @@ main {
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-bottom: 140px;
+      margin-bottom: 20px;
 
       .fourth_page_images1 {
         width: 100%;
@@ -667,8 +724,9 @@ main {
       width: 100%;
       align-items: center;
       justify-content: center;
+      padding-top: 60px;
 
-      h5 {
+      h5 {font-family: 'Gilroy-Regular', sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 100%;
@@ -677,7 +735,7 @@ main {
         text-transform: uppercase;
       }
 
-      h2 {
+      h2 {font-family: 'gilroybold', sans-serif;
         font-size: 42px;
         font-weight: 400;
         line-height: 100%;
@@ -715,7 +773,7 @@ footer {
       gap: 10px;
       margin-right: 152px;
 
-      a {
+      a {font-family: 'Gilroy-Regular', sans-serif;
         color: $text-color;
         text-decoration: none;
         font-size: 28px;
@@ -729,7 +787,7 @@ footer {
         }
       }
 
-      p {
+      p {font-family: 'Gilroy-Regular', sans-serif;
         margin-bottom: 60px;
         color: $text-color;
         font-size: 14px;
@@ -757,7 +815,7 @@ footer {
             }
           }
 
-          a {
+          a {font-family: 'Gilroy-Regular', sans-serif;
             color: $text-color;
             text-decoration: none;
             font-size: 15px;
@@ -838,7 +896,7 @@ footer {
       justify-content: flex-end;
       gap: 20px;
 
-      a {
+      a {font-family: 'Gilroy-Regular', sans-serif;
         text-decoration: none;
         color: $text-color;
         font-size: 14px;
@@ -853,7 +911,6 @@ footer {
     }
   }
 }
-
 
 .owl-nav {
   .owl-prev {
