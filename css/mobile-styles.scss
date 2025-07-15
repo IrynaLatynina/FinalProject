@@ -3,6 +3,7 @@ $breakpoint-mobile-mini: 320px;
 $breakpoint-mobile: 370px;
 $breakpoint-mobile-pro: 480px;
 $breakpoint-mobile-standard: 529px;
+$breakpoint-mobile-medium: 670px;
 $breakpoint-tablet: 768px;
 $breakpoint-tablet-medium: 813px;
 $breakpoint-laptop-small: 892px;
@@ -20,12 +21,6 @@ $breakpoint-desktop-large: 3000px;
         p {
           padding: 30px 0;
         }
-      }
-    }
-
-    .second_page {
-      .furniture_carousel {
-        padding: 0 360px;
       }
     }
 
@@ -59,7 +54,7 @@ $breakpoint-desktop-large: 3000px;
       margin-bottom: 10px;
     }
   }
-  main .fifth_page {
+  .fifth_page {
     flex-wrap: wrap;
   }
 }
@@ -72,12 +67,6 @@ $breakpoint-desktop-large: 3000px;
 
 @media screen and (max-width: $breakpoint-laptop) {
   main {
-    .second_page {
-      .furniture_carousel {
-        padding: 0 160px;
-      }
-    }
-
     .third_page {
       flex-wrap: wrap;
       margin-bottom: 106px;
@@ -126,11 +115,11 @@ $breakpoint-desktop-large: 3000px;
 
 @media screen and (max-width: $breakpoint-tablet-medium) {
   main {
-    .second_page {
-      .furniture_carousel {
-        padding-left: 245px;
-      }
-    }
+    //.second_page {
+    //  .furniture_carousel {
+    //    padding-left: 245px;
+    //  }
+    //}
   }
 }
 
@@ -142,7 +131,7 @@ $breakpoint-desktop-large: 3000px;
   main {
     .second_page {
       .furniture_carousel {
-        padding: 0 190px;
+        padding: 0 200px;
       }
     }
 
@@ -152,9 +141,31 @@ $breakpoint-desktop-large: 3000px;
         padding: 5px;
       }
     }
+
+    .fourth_page_images {
+      flex-wrap: wrap;
+
+      .fourth_page_images2 {
+        width:5rem;
+        height: 10rem;
+      }
+    }
   }
   footer .footer_container2 {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile-medium) {
+  main {
+    .general_background{
+      box-shadow: inset 0 -60px 50px -10px rgba(255, 255, 255, 1.0);
+    }
+    .second_page {
+      .furniture_carousel {
+        padding: 0 180px;
+      }
+    }
   }
 }
 
@@ -171,11 +182,13 @@ $breakpoint-desktop-large: 3000px;
         font-size: 50px;
       }
     }
+
     .second_page {
       .furniture_carousel {
-        padding: 0 150px;
+        padding: 0 115px;
       }
     }
+
     .third_page {
       margin-bottom: 86px;
 
@@ -216,26 +229,51 @@ $breakpoint-desktop-large: 3000px;
       }
     }
 
-    .second_page .furniture_carousel .furniture_card .furniture_card_info .price {
+    .second_page {
+      .furniture_carousel {
+        padding: 0 65px;
+      }
 
-      flex-wrap: wrap;
+      .furniture_card .furniture_card_info .price {
 
-      &::after {
-        margin-left: 120px;
+
+        flex-wrap: wrap;
       }
     }
 
-  }
-}
+    .fourth_page {
+      .fourth_page_images {
+        justify-content: left;
+      }
+    }
+    .fifth_page {
+        .review_containers {
+          padding: 0 5px;
+        }
 
+    }
+  }
+
+}
 
 @media screen and (max-width: $breakpoint-mobile) {
   main {
     .general_background .top_text_page .main_text {
       padding-top: 367px;
     }
-  }
 
+    .second_page {
+      .furniture_carousel {
+        padding: 0 35px;
+      }
+    }
+
+    .fourth_page_images2 {
+      width: 300px;
+      height: 100%;
+
+    }
+  }
 }
 
 @media screen and (max-width: $breakpoint-mobile-mini) {
@@ -264,13 +302,6 @@ $breakpoint-desktop-large: 3000px;
       }
     }
 
-    .second_page {
-      .furniture_carousel {
-        padding: 15px;
-      }
-    }
-
-
     .fourth_page {
       margin-bottom: 86px;
 
@@ -284,6 +315,7 @@ $breakpoint-desktop-large: 3000px;
 
       .fourth_page_images2 {
         display: none;
+
       }
     }
 

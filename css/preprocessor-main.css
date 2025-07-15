@@ -87,7 +87,7 @@ main {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 40px 80px;
+    padding: 40px 80px 60px 80px;
     position: relative;
     box-shadow: inset 0 -100px 50px -10px white; }
     main .general_background .top_text_page .main_text {
@@ -444,12 +444,22 @@ main {
           margin-left: 13px; }
         main .fourth_page .fourth_page_text a:hover {
           color: #b6690d; }
-    main .fourth_page .fourth_page_image {
+    main .fourth_page .fourth_page_images {
       display: flex;
       justify-content: center;
-      width: 100%;
       align-items: center;
-      margin-bottom: 306px; }
+      width: 100%;
+      margin-bottom: 140px; }
+      main .fourth_page .fourth_page_images .fourth_page_images1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+        margin-bottom: 120px; }
+      main .fourth_page .fourth_page_images .fourth_page_images2 {
+        width: 100%;
+        padding: 0 5px; }
   main .fifth_page {
     display: flex;
     flex-direction: column;
@@ -482,7 +492,8 @@ main {
       background-color: #FFFFFF;
       width: 100%;
       align-items: center;
-      gap: 20px; }
+      gap: 20px;
+      padding: 0 80px; }
 
 footer .footer_container1 {
   display: flex;
@@ -605,6 +616,10 @@ footer .footer_container2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
   .owl-nav .owl-prev span {
     display: none; }
+  @media screen and (max-width: 530px) {
+    .owl-nav .owl-prev {
+      left: 30px;
+      top: 35%; } }
   @media screen and (max-width: 320px) {
     .owl-nav .owl-prev {
       left: 20px;
@@ -638,6 +653,10 @@ footer .footer_container2 {
   @media screen and (max-width: 500px) {
     .owl-nav .owl-next {
       right: 80px;
+      top: 35%; } }
+  @media screen and (max-width: 530px) {
+    .owl-nav .owl-next {
+      right: 60px;
       top: 35%; } }
   @media screen and (max-width: 320px) {
     .owl-nav .owl-next {

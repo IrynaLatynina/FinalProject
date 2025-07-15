@@ -4,16 +4,19 @@
   transform: $property;
   display: block;
 }
+
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
     @content;
   }
 }
+
 @mixin min-screen($res) {
   @media screen and (min-width: $res) {
     @content;
   }
 }
+
 $background-color: #F7F7F7;
 $font-orange-color: #E58411;
 $text-color: #1E1E1E;
@@ -22,6 +25,7 @@ $text-color: #1E1E1E;
   margin: 0;
   box-sizing: border-box;
 }
+
 .loading-spinner {
   width: 50px;
   height: 50px;
@@ -140,7 +144,7 @@ main {
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0 auto;
-    padding: 40px 80px;
+    padding: 40px 80px 60px 80px;
     position: relative;
     box-shadow: inset 0 -100px 50px -10px rgba(255, 255, 255, 1.0);
 
@@ -250,8 +254,8 @@ main {
       justify-content: space-between;
       gap: 28px;
       margin-bottom: 100px;
-      @include max-screen(1120px){
-        gap:80px;
+      @include max-screen(1120px) {
+        gap: 80px;
       }
 
       h3 {
@@ -404,6 +408,7 @@ main {
               width: 9px;
               height: 15px;
             }
+
             &::after {
               content: '';
               display: inline-block;
@@ -421,7 +426,6 @@ main {
             }
           }
         }
-
       }
     }
 
@@ -617,12 +621,26 @@ main {
       }
     }
 
-    .fourth_page_image {
+    .fourth_page_images {
       display: flex;
       justify-content: center;
-      width: 100%;
       align-items: center;
-      margin-bottom: 306px;
+      width: 100%;
+      margin-bottom: 140px;
+
+      .fourth_page_images1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+        margin-bottom: 120px;
+      }
+
+      .fourth_page_images2 {
+        width: 100%;
+        padding: 0 5px;
+      }
     }
   }
 
@@ -666,8 +684,10 @@ main {
       width: 100%;
       align-items: center;
       gap: 20px;
+      padding: 0 80px;
     }
-  }}
+  }
+}
 
 footer {
   .footer_container1 {
@@ -734,7 +754,6 @@ footer {
             font-size: 15px;
             font-weight: 400;
             line-height: 160%;
-
           }
 
           &:first-of-type {
@@ -817,6 +836,7 @@ footer {
         font-weight: 400;
         line-height: 185%;
         justify-content: flex-end;
+
         &:hover {
           color: $font-orange-color;
         }
@@ -826,64 +846,77 @@ footer {
 }
 
 
-.owl-nav{
-  .owl-prev{
+.owl-nav {
+  .owl-prev {
     position: absolute;
     top: 35%;
     left: 60px;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background-image: url('../images/black_arrow_left.svg')!important;
-    background-repeat: no-repeat!important;
-    background-position: center!important;
+    background-image: url('../images/black_arrow_left.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     background-size: 21px 15px;
-    background-color: #FFFFFF!important;
+    background-color: #FFFFFF !important;
     border-radius: 50%;
     z-index: 1;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    span{
+
+    span {
       display: none;
     }
 
-    @include max-screen(320px){
-      left:20px;
+    @include max-screen(530px) {
+      left: 30px;
+      top: 35%;
+    }
+
+    @include max-screen(320px) {
+      left: 20px;
       top: 35%;
     }
   }
-  .owl-next{
+
+  .owl-next {
     position: absolute;
     top: 35%;
     right: 170px;
     transform: translateY(-50%);
     width: 40px;
     height: 40px;
-    background-image: url('../images/black_arrow_right.svg')!important;
-    background-repeat: no-repeat!important;
-    background-position: center!important;
+    background-image: url('../images/black_arrow_right.svg') !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     background-size: 21px 15px;
-    background-color: #FFFFFF!important;
+    background-color: #FFFFFF !important;
     border-radius: 50%;
     z-index: 1;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    span{
+
+    span {
       display: none;
     }
-    @include max-screen(1200px){
+
+    @include max-screen(1200px) {
       right: 130px;
       top: 35%;
     }
-    @include max-screen(1110px){
+    @include max-screen(1110px) {
       right: 110px;
       top: 35%;
     }
-    @include max-screen(500px){
+    @include max-screen(500px) {
       right: 80px;
       top: 35%;
     }
-    @include max-screen(320px){
+    @include max-screen(530px) {
+      right: 60px;
+      top: 35%;
+    }
+    @include max-screen(320px) {
       right: 10px;
       top: 35%;
     }
