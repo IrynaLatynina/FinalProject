@@ -65,7 +65,7 @@
   main .general_background {
     box-shadow: inset 0 -60px 50px -10px white; }
   main .second_page .furniture_carousel {
-    padding: 0 180px; } }
+    padding: 0 120px; } }
 @media screen and (max-width: 529px) {
   header nav {
     flex-wrap: wrap; }
