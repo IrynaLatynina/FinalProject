@@ -209,22 +209,27 @@
     }
   }
   header nav {
-    justify-content: flex-end;
-    padding: 80px 78px;
+    justify-content: center;
+    padding: 40px 78px;
 
     ul {
       gap: 0;
 
       li {
-        span{
+        a {
           color: #1c3991;
         }
 
         &:first-of-type::after {
-          left: 75px;
+          left: 95px;
           background-image: url('../images/Vector_blue.svg');
         }
       }
     }
   }
+}
+@media (max-width: 390px) {
+  header nav{
+  padding: 40px 20px;
+  justify-content: flex-end}
 }

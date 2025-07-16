@@ -110,7 +110,7 @@ $text-color: #1E1E1E;
 
 header {
 
-  a {
+  >a {
     display: inline-block;
     transition: transform 0.3s ease;
     transform-origin: center;
@@ -156,10 +156,9 @@ header {
       list-style: none;
       gap: 65px;
       justify-content: center;
-      color: #FFFF;
 
       li {
-        span {font-family: 'Gilroy-BoldItalic', sans-serif;
+        a {font-family: 'Gilroy-BoldItalic', sans-serif;
           color: #FFFF;
           font-size: 18px;
           font-weight: 400;

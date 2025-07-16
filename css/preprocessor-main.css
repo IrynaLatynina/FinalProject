@@ -53,23 +53,23 @@
     opacity: 0;
     visibility: hidden;
     /* Makes the element completely undetectable after fading */ } }
-header a {
+header > a {
   display: inline-block;
   transition: transform 0.3s ease;
   transform-origin: center; }
-  header a:first-of-type {
+  header > a:first-of-type {
     position: absolute;
     top: 40px;
     left: 80px;
     z-index: 8; }
-    header a:first-of-type:hover {
+    header > a:first-of-type:hover {
       transform: rotate(360deg); }
-  header a:nth-of-type(2) {
+  header > a:nth-of-type(2) {
     position: absolute;
     top: 40px;
     right: 80px;
     z-index: 8; }
-    header a:nth-of-type(2):hover {
+    header > a:nth-of-type(2):hover {
       transform: rotate(180deg); }
 header nav {
   align-items: center;
@@ -87,9 +87,8 @@ header nav {
     display: flex;
     list-style: none;
     gap: 65px;
-    justify-content: center;
-    color: #FFFF; }
-    header nav ul li span {
+    justify-content: center; }
+    header nav ul li a {
       font-family: 'Gilroy-BoldItalic', sans-serif;
       color: #FFFF;
       font-size: 18px;

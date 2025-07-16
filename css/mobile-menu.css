@@ -131,14 +131,18 @@
       transform-origin: left; }
 
   header nav {
-    justify-content: flex-end;
-    padding: 80px 78px; }
+    justify-content: center;
+    padding: 40px 78px; }
     header nav ul {
       gap: 0; }
-      header nav ul li span {
+      header nav ul li a {
         color: #1c3991; }
       header nav ul li:first-of-type::after {
-        left: 75px;
+        left: 95px;
         background-image: url("../images/Vector_blue.svg"); } }
+@media (max-width: 390px) {
+  header nav {
+    padding: 40px 20px;
+    justify-content: flex-end; } }
 
 /*# sourceMappingURL=mobile-menu.css.map */
