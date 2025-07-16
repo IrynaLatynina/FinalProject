@@ -196,6 +196,9 @@ header {
 
 main {
   margin: 0 auto;
+  img{
+    width: 100%;
+  }
 
   .general_background {
     background-image: url("../images/main_background_image.jpg");
@@ -685,16 +688,17 @@ main {
         }
       }
     }
-
     .fourth_page_images {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
       margin-bottom: 20px;
+      img{
+        width: 100%;
+      }
 
       .fourth_page_images1 {
-        width: 100%;
         display: flex;
         flex-direction: column;
         z-index: 1;
@@ -703,7 +707,6 @@ main {
       }
 
       .fourth_page_images2 {
-        width: 100%;
         padding: 0 5px;
       }
     }
